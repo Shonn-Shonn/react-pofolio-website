@@ -16,6 +16,8 @@ const Wrap = styled.div`
     @media(max-width: 768px){
       height: auto;
       flex-direction: column;
+
+    }
 `;
 
 const SectionOne = styled.div`
@@ -35,6 +37,11 @@ const SectionOne = styled.div`
         padding: .5rem;
         color: gray;
     }
+
+    @media(max-width: 768px){
+        width: 90%;
+  
+      }
 `;
 
 
@@ -48,6 +55,11 @@ const SectionTwo = styled.div`
         color: orange;
         text-transform: uppercase;
     }
+
+    @media(max-width: 768px){
+        width: 90%;
+  
+      }
 `;
 
 const Item = styled.div`
