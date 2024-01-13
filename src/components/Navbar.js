@@ -195,10 +195,9 @@ export default function Navbar() {
     </Nav>
         {isOpenMenu && (
              <MobileMenu>
-                <NavItem><a href='/'>Home</a></NavItem>
-                <NavItem><a href='/projects'>Projects</a></NavItem>
-                <NavItem><a href='/skills'>Skills</a></NavItem>
-                <NavItem><a href='/contacts'>Contacts</a></NavItem>
+                <NavItem><a href='#projects'>Projects</a></NavItem>
+                <NavItem><a href='#skills'>Skills</a></NavItem>
+                <NavItem><a href='#contacts'>Contacts</a></NavItem>
                 <NavItem ><a className='resume' href={resume} download="wint_resume.pdf">Resume<FaFileDownload/></a></NavItem>
             </MobileMenu>
         )}
