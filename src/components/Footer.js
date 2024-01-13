@@ -13,12 +13,23 @@ const FooterDiv = styled.div`
     justify-content: center;
     gap: 3;
     align-items: center;
+
+    @media(max-width: 768px){
+           flex-direction: column;  
+      }
 `;
 
 const PartOne = styled.div`
     h3 {
         margin-bottom: 1.5rem;
     }
+
+
+    @media(max-width: 768px){
+        margin: 0;
+   }
+
+
 `;
 
 const PartTwo = styled.div`
@@ -34,6 +45,11 @@ const PartTwo = styled.div`
     a {
         color: black;
     }
+
+
+    @media(max-width: 768px){
+        margin: 0;  
+   }
 `;
 
 export default function Footer() {
