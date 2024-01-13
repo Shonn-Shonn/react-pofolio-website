@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import imgLogo from './assets/bgfor.png';
 import Header from './components/Header';
 import About from './components/About';
+import Slider from './components/Slider';
 
 const AppContainer = styled.div`
   margin: 0 auto;
@@ -27,6 +28,7 @@ const App = () => {
 
       <Header/>
       <About/>
+      <Slider/>
     </div>
   );
 };

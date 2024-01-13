@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { AiOutlineAlignLeft } from "react-icons/ai";
+import { FaFileDownload } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import { MotionAnimate } from 'react-motion-animate';
+import resume from '../assets/Resume/wint_resume.pdf'
 
 const Nav = styled.div`
     display: flex;
@@ -34,6 +36,13 @@ const NavItem = styled.li`
     padding-right: .5rem;
     font-size: 1.115rem;
 
+    .resume {
+        color: 008ecc;
+        box-shadow: 1px 3px 3px rgba(3,5,2,0.5);
+        padding: 0.4rem .9rem;
+        border-radius: .5rem;
+    }
+
     a {
         text-decoration: none;
         color: #008ecc;
@@ -49,6 +58,12 @@ const NavItem = styled.li`
 
         a {
             color: #008ecc;
+        }
+        
+        .resume {
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
         }
     }
 `;
@@ -170,6 +185,7 @@ export default function Navbar() {
             <NavItem><a href='#projects'>Projects</a></NavItem>
             <NavItem><a href='#skills'>Skills</a></NavItem>
             <NavItem><a href='#contact'>Contact</a></NavItem>
+            <NavItem ><a className='resume' href={resume} download="wint_resume.pdf">Resume<FaFileDownload/></a></NavItem>
         </DesktopMenu>
       
         <MobileNavToggle onClick={() => setIsOpenMenu(!isOpenMenu)}>
@@ -182,7 +198,8 @@ export default function Navbar() {
                 <NavItem><a href='/'>Home</a></NavItem>
                 <NavItem><a href='/projects'>Projects</a></NavItem>
                 <NavItem><a href='/skills'>Skills</a></NavItem>
-                <NavItem><a href='/contact'>Contact</a></NavItem>
+                <NavItem><a href='/contacts'>Contacts</a></NavItem>
+                <NavItem ><a className='resume' href={resume} download="wint_resume.pdf">Resume<FaFileDownload/></a></NavItem>
             </MobileMenu>
         )}
 
