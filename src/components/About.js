@@ -38,8 +38,20 @@ const SectionOne = styled.div`
         color: gray;
     }
 
+    .p-hide {
+        display: none;
+    }
+
     @media(max-width: 768px){
         width: 90%;
+
+        p {
+            display: none;
+        }
+
+        .p-hide{
+            display: block;
+        }
   
       }
 `;
@@ -75,6 +87,11 @@ const Item = styled.div`
         padding: .2rem;
     }
 
+    @media(max-width: 768px){
+        width: 100%;
+  
+      }
+
 `;
 
 export default function About() {
@@ -94,6 +111,11 @@ export default function About() {
            <p>
            Hello, my name is Wint Phyusin Maung and I am a backend developer with a passion for learning new technologies and solving complex problems. I have experience working with a variety of programming languages and frameworks, including PHP, Javascript, and Laravel. In my current role, I am responsible for designing and implementing scalable and robust backend systems that power web and mobile applications. I am always seeking new challenges and opportunities to improve my skills and contribute to innovative projects. Please feel free to connect with me to discuss potential collaborations or simply chat about the latest tech trends.
            </p>
+
+           <p className='p-hide'>
+           Hello, my name is Wint Phyusin Maung and I am a backend developer. I have experience working with programming languages and frameworks, including PHP, Javascript, and Laravel.  I am responsible for designing and implementing scalable and robust backend systems that power web and mobile applications. 
+           </p>
+
         </SectionOne>
         <SectionTwo>
            <h3>I worked on...</h3>
